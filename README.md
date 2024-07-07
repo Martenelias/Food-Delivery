@@ -34,3 +34,9 @@ Toppings: Olive oil or white sauce, mozzarella cheese, spinach, feta cheese, gar
 Toppings: Tomato sauce, mozzarella cheese, shrimp, calamari, clams, garlic, fresh herbs. 
 15. Bacon and Egg Breakfast Pizza 
 Toppings: Olive oil or white sauce, mozzarella cheese, bacon, eggs, spinach, Parmesan cheese. 
+
+
+check eslint errors: 
+npm run lint 
+
+fix errors: npm run lint:fix
