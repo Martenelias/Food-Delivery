@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+@mixin font-header {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$lightGreen: #2f645e;
+$darkGreen: #07322E;
+$white: #cbdbd9;
+$darkOrange: #E94723;
+$lightOrange: #F0681F;

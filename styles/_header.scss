@@ -1,0 +1,49 @@
+@import "./fonts-var-mixin";
+
+nav {
+  height: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu {
+    @include font-header();
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .fa-bars {
+      color: $white;
+      font-size: 28px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .dropdown {
+      display: none;
+    }
+  }
+  .icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .fa-heart {
+      font-size: 28px;
+      color: $lightGreen;
+      &:hover {
+        cursor: pointer;
+        color: $white;
+      }
+    }
+    .fa-cart-shopping {
+      font-size: 28px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
