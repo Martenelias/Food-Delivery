@@ -4,15 +4,13 @@ nav {
   height: 100px;
   padding-left: 50px;
   padding-right: 50px;
-  display: flex;
+  @include flex-align;
   justify-content: space-between;
-  align-items: center;
 
   .menu {
-    @include font-header();
+    @include font-header;
     width: 240px;
-    display: flex;
-    align-items: center;
+    @include flex-align;
     justify-content: space-between;
 
     .fa-bars {
@@ -28,7 +26,7 @@ nav {
   }
   .icons {
     width: 100px;
-    display: flex;
+    @include flex-align;
     justify-content: space-between;
 
     .fa-heart {

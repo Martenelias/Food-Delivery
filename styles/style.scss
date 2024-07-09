@@ -1,5 +1,6 @@
 @import "./_header";
 @import "./_fonts-var-mixin";
+@import "./details";
 
 * {
   margin: 0;
@@ -8,6 +9,6 @@
 
 body {
   background-image: radial-gradient(circle, #0A4235, #07322E);
-  @include font-text();
+  @include font-text;
   color: $white;
 }

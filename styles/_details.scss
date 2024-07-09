@@ -1,0 +1,51 @@
+@import "./fonts-var-mixin";
+
+.details {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+
+  .size {
+    @include flex-align;
+    justify-content: center;
+    font-size: 12px;
+    color: $lightGreen;
+  }
+
+  .name-size-price {
+    @include flex-align;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 300px;
+    padding-right: 300px;
+
+    h2 {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .choose-size {
+      height: 50px;
+      @include flex-align;
+      justify-content: center;
+      gap: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      p {
+        font-size: 24px;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+    }
+
+    .price {
+      flex-grow: 1;
+      text-align: right;
+    }
+  }
+}
