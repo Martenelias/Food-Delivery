@@ -34,51 +34,142 @@ body {
     outline-offset: -70px;
     transform: translateY(50%);
   }
+
   .names {
     position: relative;
     padding-top: 50px;
-    width: 1500px;
+    width: 1200px;
     height: 600px;
     display: flex;
     justify-content: space-evenly;
-    p {
+
+    div {
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 20px;
       color: $lightGreen;
       &:hover {
         color: $white;
         cursor: pointer;
       }
+
+      span {
+        position: relative;
+      }
+
+      .dot {
+        position: absolute;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: $white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50px);
+      }
     }
+
     .one {
-      padding-top: 30px;
-      margin-right: 400px;
+      margin-top: 35px;
+      margin-right: 420px;
       transform: rotate(-20deg);
     }
+
     .two {
-      padding-top: 130px;
-      margin-right: 800px;
-      transform: rotate(-36deg);
+      margin-top: 140px;
+      margin-right: 780px;
+      transform: rotate(-42deg);
     }
+
     .three {
-      padding-top: 320px;
-      margin-right: 1250px;
-      transform: rotate(-55deg);
+      margin-top: 300px;
+      margin-right: 1050px;
+      transform: rotate(-60deg);
     }
+
     .four {
-      padding-top: 30px;
-      margin-left: 400px;
+      margin-top: 35px;
+      margin-left: 420px;
       transform: rotate(20deg);
     }
+
     .five {
-      padding-top: 130px;
-      margin-left: 800px;
-      transform: rotate(36deg);
+      margin-top: 140px;
+      margin-left: 780px;
+      transform: rotate(42deg);
     }
+
     .six {
-      padding-top: 320px;
-      margin-left: 1250px;
-      transform: rotate(55deg);
+      margin-top: 300px;
+      margin-left: 1050px;
+      transform: rotate(60deg);
     }
   }
+}
+
+@media screen and (max-width: 1700px) {
+  .details {
+    gap: 30px;
+  }
+
+  .pizzas img {
+    width: 700px;
+    height: 700px;
+    padding: 30px;
+    outline-offset: -50px;
+  }
+  .pizzas .names {
+    padding-top: 0;
+    margin-top: -50px;
+    width: 1000px;
+
+    div {
+      font-size: 16px;
+
+      .dot {
+        transform: translate(-50%, 22px);
+      }
+      .one {
+        margin-top: 35px;
+        margin-right: 420px;
+        transform: rotate(-20deg);
+      }
+  
+      .two {
+        margin-top: 140px;
+        margin-right: 780px;
+        transform: rotate(-42deg);
+      }
+  
+      .three {
+        margin-top: 300px;
+        margin-right: 1050px;
+        transform: rotate(-60deg);
+      }
+  
+      .four {
+        margin-top: 35px;
+        margin-left: 420px;
+        transform: rotate(20deg);
+      }
+  
+      .five {
+        margin-top: 140px;
+        margin-left: 780px;
+        transform: rotate(42deg);
+      }
+  
+      .six {
+        margin-top: 300px;
+        margin-left: 1050px;
+        transform: rotate(60deg);
+      }
+      .seven {
+      }
+    }
+  }
+  
+  
 }
