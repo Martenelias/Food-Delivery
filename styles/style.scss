@@ -17,8 +17,10 @@ body {
 }
 
 .pizzas {
-  @include flex-align;
+  display: flex;
   justify-content: center;
+  align-items: self-end;
+  height: 100vh;
 
   img {
     @include flex-align;
@@ -37,11 +39,11 @@ body {
 
   .names {
     position: relative;
-    padding-top: 50px;
+    margin-bottom: 950px;
     width: 1200px;
-    height: 600px;
     display: flex;
     justify-content: space-evenly;
+    transform: translateY(50%);
 
     div {
       position: absolute;
@@ -72,7 +74,7 @@ body {
     }
 
     .one {
-      margin-top: 35px;
+      margin-top: -15px;
       margin-right: 420px;
       transform: rotate(-20deg);
     }
@@ -90,7 +92,7 @@ body {
     }
 
     .four {
-      margin-top: 35px;
+      margin-top: -15px;
       margin-left: 420px;
       transform: rotate(20deg);
     }
@@ -121,9 +123,8 @@ body {
     outline-offset: -50px;
   }
   .pizzas .names {
-    padding-top: 0;
-    margin-top: -50px;
     width: 1000px;
+    margin-bottom: 470px;
 
     div {
       font-size: 16px;
@@ -166,10 +167,6 @@ body {
         margin-left: 1050px;
         transform: rotate(60deg);
       }
-      .seven {
-      }
     }
   }
-  
-  
 }
