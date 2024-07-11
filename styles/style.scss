@@ -11,4 +11,74 @@ body {
   background-image: radial-gradient(circle, #0A4235, #07322E);
   @include font-text;
   color: $white;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.pizzas {
+  @include flex-align;
+  justify-content: center;
+
+  img {
+    @include flex-align;
+    justify-content: center;
+    width: 1000px;
+    height: 1000px;
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    border: 4px solid $lightGreen;
+    border-radius: 50%;
+    outline: 4px solid $white;
+    outline-offset: -70px;
+    transform: translateY(50%);
+  }
+  .names {
+    position: relative;
+    padding-top: 50px;
+    width: 1500px;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    p {
+      position: absolute;
+      font-size: 20px;
+      color: $lightGreen;
+      &:hover {
+        color: $white;
+        cursor: pointer;
+      }
+    }
+    .one {
+      padding-top: 30px;
+      margin-right: 400px;
+      transform: rotate(-20deg);
+    }
+    .two {
+      padding-top: 130px;
+      margin-right: 800px;
+      transform: rotate(-36deg);
+    }
+    .three {
+      padding-top: 320px;
+      margin-right: 1250px;
+      transform: rotate(-55deg);
+    }
+    .four {
+      padding-top: 30px;
+      margin-left: 400px;
+      transform: rotate(20deg);
+    }
+    .five {
+      padding-top: 130px;
+      margin-left: 800px;
+      transform: rotate(36deg);
+    }
+    .six {
+      padding-top: 320px;
+      margin-left: 1250px;
+      transform: rotate(55deg);
+    }
+  }
 }

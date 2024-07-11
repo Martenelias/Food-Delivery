@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
 nav {
   height: 100px;
@@ -53,9 +53,9 @@ nav .icons .fa-cart-shopping:hover {
 }
 
 .details {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 .details .size {
   display: flex;
@@ -73,7 +73,6 @@ nav .icons .fa-cart-shopping:hover {
   padding-right: 300px;
 }
 .details .name-size-price h2 {
-  flex-grow: 1;
   text-align: left;
 }
 .details .name-size-price .choose-size {
@@ -85,18 +84,67 @@ nav .icons .fa-cart-shopping:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 .details .name-size-price .choose-size p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   font-size: 24px;
   padding: 10px;
-  border: 1px solid white;
+  border: 4px solid #2f645e;
   border-radius: 50%;
 }
-.details .name-size-price .price {
-  flex-grow: 1;
+.details .name-size-price .choose-size p:hover {
+  border: 4px solid #cbdbd9;
+  cursor: pointer;
+}
+.details .name-size-price .price-cart {
   text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.details .name-size-price .price-cart .price {
+  font-size: 20px;
+}
+.details .name-size-price .price-cart .fa-cart-shopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  background-image: linear-gradient(to bottom right, #E94723, #F0681F);
+  border-radius: 50%;
+  box-shadow: 6px 6px 20px 3px #864417;
+}
+.details .name-size-price .price-cart .fa-cart-shopping:hover {
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.1s ease;
+}
+.details .top-fav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
+  color: #2f645e;
+}
+.details .top-fav .fav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.details .top-fav .fav .fa-heart {
+  font-size: 25px;
+}
+.details .top-fav .fav .fa-heart:hover {
+  color: #cbdbd9;
+  cursor: pointer;
 }
 
 * {
@@ -106,8 +154,80 @@ nav .icons .fa-cart-shopping:hover {
 
 body {
   background-image: radial-gradient(circle, #0A4235, #07322E);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
   color: #cbdbd9;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.pizzas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pizzas img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 1000px;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  border: 4px solid #2f645e;
+  border-radius: 50%;
+  outline: 4px solid #cbdbd9;
+  outline-offset: -70px;
+  transform: translateY(50%);
+}
+.pizzas .names {
+  position: relative;
+  padding-top: 50px;
+  width: 1500px;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pizzas .names p {
+  position: absolute;
+  font-size: 20px;
+  color: #2f645e;
+}
+.pizzas .names p:hover {
+  color: #cbdbd9;
+  cursor: pointer;
+}
+.pizzas .names .one {
+  padding-top: 30px;
+  margin-right: 400px;
+  transform: rotate(-20deg);
+}
+.pizzas .names .two {
+  padding-top: 130px;
+  margin-right: 800px;
+  transform: rotate(-36deg);
+}
+.pizzas .names .three {
+  padding-top: 320px;
+  margin-right: 1250px;
+  transform: rotate(-55deg);
+}
+.pizzas .names .four {
+  padding-top: 30px;
+  margin-left: 400px;
+  transform: rotate(20deg);
+}
+.pizzas .names .five {
+  padding-top: 130px;
+  margin-left: 800px;
+  transform: rotate(36deg);
+}
+.pizzas .names .six {
+  padding-top: 320px;
+  margin-left: 1250px;
+  transform: rotate(55deg);
 }/*# sourceMappingURL=style.css.map */
