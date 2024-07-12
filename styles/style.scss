@@ -25,22 +25,22 @@ body {
   img {
     @include flex-align;
     justify-content: center;
-    width: 1000px;
-    height: 1000px;
-    padding: 50px;
+    width: 600px;
+    height: 600px;
+    padding: 30px;
     position: absolute;
     bottom: 0;
     border: 4px solid $lightGreen;
     border-radius: 50%;
     outline: 4px solid $white;
-    outline-offset: -70px;
+    outline-offset: -50px;
     transform: translateY(50%);
   }
 
   .names {
     position: relative;
-    margin-bottom: 950px;
-    width: 1200px;
+    margin-bottom: 730px;
+    width: 1000px;
     display: flex;
     justify-content: space-evenly;
     transform: translateY(50%);
@@ -74,99 +74,159 @@ body {
     }
 
     .one {
-      margin-top: -15px;
-      margin-right: 420px;
-      transform: rotate(-20deg);
+      margin-top: -10px;
+      margin-right: 350px;
+      transform: rotate(-25deg);
     }
 
     .two {
-      margin-top: 140px;
-      margin-right: 780px;
-      transform: rotate(-42deg);
+      margin-top: 90px;
+      margin-right: 600px;
+      transform: rotate(-48deg);
     }
 
     .three {
-      margin-top: 300px;
-      margin-right: 1050px;
-      transform: rotate(-60deg);
+      margin-top: 220px;
+      margin-right: 740px;
+      transform: rotate(-73deg);
     }
 
     .four {
-      margin-top: -15px;
-      margin-left: 420px;
-      transform: rotate(20deg);
+      margin-top: -10px;
+      margin-left: 350px;
+      transform: rotate(25deg);
     }
 
     .five {
-      margin-top: 140px;
-      margin-left: 780px;
-      transform: rotate(42deg);
+      margin-top: 90px;
+      margin-left: 600px;
+      transform: rotate(48deg);
     }
 
     .six {
-      margin-top: 300px;
-      margin-left: 1050px;
-      transform: rotate(60deg);
+      margin-top: 220px;
+      margin-left: 740px;
+      transform: rotate(73deg);
+    }
+    .seven {
+      margin-top: -52px;
     }
   }
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1400px) {
+  .details .name-size-price {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .details .top-fav {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+.pizzas .names div {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
   .details {
-    gap: 30px;
-  }
+    gap: 10px;
 
+    .size {
+      font-size: 10px;
+    }
+    .name-size-price {
+      font-size: 12px;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      .choose-size p {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        border: 2px solid $lightGreen;
+        &:hover {
+          border: 2px solid $white;
+        }
+      }
+      .price-cart .fa-cart-shopping {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        &:hover {
+          font-size: 22px;
+        }
+      } 
+    }
+    .top-fav {
+      padding-left: 100px;
+      padding-right: 100px;
+      font-size: 12px;
+
+      .fav .fa-heart {
+        font-size: 22px;
+      }
+    }
+  }
   .pizzas img {
-    width: 700px;
-    height: 700px;
-    padding: 30px;
-    outline-offset: -50px;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid $lightGreen;
+    border-radius: 50%;
+    outline: 2px solid $white;
+    outline-offset: -30px;
   }
-  .pizzas .names {
-    width: 1000px;
-    margin-bottom: 470px;
 
+  .pizzas .names {
+    margin-bottom: 435px;
+    width: 1000px;
     div {
-      font-size: 16px;
+      font-size: 12px;
 
       .dot {
-        transform: translate(-50%, 22px);
+        transform: translate(-50%, 20px);
       }
-      .one {
-        margin-top: 35px;
-        margin-right: 420px;
-        transform: rotate(-20deg);
-      }
-  
-      .two {
-        margin-top: 140px;
-        margin-right: 780px;
-        transform: rotate(-42deg);
-      }
-  
-      .three {
-        margin-top: 300px;
-        margin-right: 1050px;
-        transform: rotate(-60deg);
-      }
-  
-      .four {
-        margin-top: 35px;
-        margin-left: 420px;
-        transform: rotate(20deg);
-      }
-  
-      .five {
-        margin-top: 140px;
-        margin-left: 780px;
-        transform: rotate(42deg);
-      }
-  
-      .six {
-        margin-top: 300px;
-        margin-left: 1050px;
-        transform: rotate(60deg);
-      }
+    }
+    .one {
+      margin-top: -33px;
+      margin-right: 180px;
+      transform: rotate(-25deg);
+    }
+
+    .two {
+      margin-top: 20px;
+      margin-right: 320px;
+      transform: rotate(-50deg);
+    }
+
+    .three {
+      margin-top: 100px;
+      margin-right: 405px;
+      transform: rotate(-75deg);
+    }
+
+    .four {
+      margin-top: -33px;
+      margin-left: 180px;
+      transform: rotate(25deg);
+    }
+
+    .five {
+      margin-top: 20px;
+      margin-left: 320px;
+      transform: rotate(50deg);
+    }
+
+    .six {
+      margin-top: 100px;
+      margin-left: 405px;
+      transform: rotate(77deg);
+    }
+    .seven {
+      margin-top: -52px;
     }
   }
 }
