@@ -4,6 +4,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
+.dropdown {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: #cbdbd9;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-right: 5px solid #2f645e;
+  border-bottom: 5px solid #2f645e;
+  width: 300px;
+  height: 400px;
+  transition: 1s ease-in-out;
+}
+.dropdown .menu-close {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  border-bottom: 2px solid #cbdbd9;
+}
+.dropdown .hrefs {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.dropdown .hrefs a {
+  text-decoration: none;
+  color: #cbdbd9;
+}
+.dropdown .hrefs a:hover {
+  text-decoration: underline;
+}
+
+.favorites {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #cbdbd9;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-left: 5px solid #2f645e;
+  border-bottom: 5px solid #2f645e;
+  width: 300px;
+  height: 200px;
+  transition: 1s ease-in-out;
+}
+.favorites .fav-close {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  border-bottom: 2px solid #cbdbd9;
+}
+.favorites .fav-pizza {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favorites .fav-pizza p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 nav {
   height: 100px;
   padding-left: 50px;
@@ -27,9 +106,6 @@ nav .menu .fa-bars {
 }
 nav .menu .fa-bars:hover {
   cursor: pointer;
-}
-nav .menu .dropdown {
-  display: none;
 }
 nav .icons {
   width: 100px;
@@ -137,7 +213,224 @@ nav .icons .fa-cart-shopping:hover {
 .details .top-fav .toppings {
   width: 100px;
   height: 100px;
-  border: 1px solid white;
+}
+.details .top-fav .fav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.details .top-fav .fav .fa-heart {
+  font-size: 25px;
+}
+.details .top-fav .fav .fa-heart:hover {
+  color: #cbdbd9;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: #cbdbd9;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-right: 5px solid #2f645e;
+  border-bottom: 5px solid #2f645e;
+  width: 300px;
+  height: 400px;
+  transition: 1s ease-in-out;
+}
+.dropdown .menu-close {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  border-bottom: 2px solid #cbdbd9;
+}
+.dropdown .hrefs {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.dropdown .hrefs a {
+  text-decoration: none;
+  color: #cbdbd9;
+}
+.dropdown .hrefs a:hover {
+  text-decoration: underline;
+}
+
+.favorites {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #cbdbd9;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-left: 5px solid #2f645e;
+  border-bottom: 5px solid #2f645e;
+  width: 300px;
+  height: 200px;
+  transition: 1s ease-in-out;
+}
+.favorites .fav-close {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  border-bottom: 2px solid #cbdbd9;
+}
+.favorites .fav-pizza {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favorites .fav-pizza p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav {
+  height: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu .fa-bars {
+  color: #cbdbd9;
+  font-size: 28px;
+}
+nav .menu .fa-bars:hover {
+  cursor: pointer;
+}
+nav .icons {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .icons .fa-heart {
+  font-size: 28px;
+  color: #2f645e;
+}
+nav .icons .fa-heart:hover {
+  cursor: pointer;
+  color: #cbdbd9;
+}
+nav .icons .fa-cart-shopping {
+  font-size: 28px;
+}
+nav .icons .fa-cart-shopping:hover {
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-left: 10px;
+}
+.details .size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #2f645e;
+}
+.details .name-size-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.details .name-size-price h2 {
+  text-align: left;
+}
+.details .name-size-price .choose-size {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.details .name-size-price .choose-size p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  padding: 10px;
+  border: 4px solid #2f645e;
+  border-radius: 50%;
+}
+.details .name-size-price .choose-size p:hover {
+  border: 4px solid #cbdbd9;
+  cursor: pointer;
+}
+.details .name-size-price .price-cart {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.details .name-size-price .price-cart .price {
+  font-size: 20px;
+}
+.details .name-size-price .price-cart .fa-cart-shopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  background-image: linear-gradient(to bottom right, #E94723, #F0681F);
+  border-radius: 50%;
+  box-shadow: 6px 6px 20px 3px #864417;
+}
+.details .name-size-price .price-cart .fa-cart-shopping:hover {
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.1s ease;
+}
+.details .top-fav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
+  color: #2f645e;
+}
+.details .top-fav .toppings {
+  width: 100px;
+  height: 100px;
 }
 .details .top-fav .fav {
   display: flex;
@@ -421,7 +714,7 @@ body {
     font-size: 18px;
   }
   .pizzas .names {
-    margin-bottom: 382px;
+    margin-bottom: 420px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -439,7 +732,7 @@ body {
   .pizzas .names {
     transform: none;
     width: 100vw;
-    margin-bottom: 650px;
+    margin-bottom: 680px;
   }
   .pizzas .names div {
     width: 100px;

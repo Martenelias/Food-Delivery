@@ -9,18 +9,34 @@
   <title>Pizza Store</title>
 </head>
 <body>
+  <div id="dropdown" class="dropdown">
+    <div class="menu-close">
+      <p>MENU</p>
+      <p id="closeMenu">X</p>
+    </div>
+    <div class="hrefs">
+      <a href="">Cart</a>
+      <a href="">Favorites</a>
+      <a href="">About</a>
+      <!--abouti pizza suurused, hinnad jne-->
+    </div>
+  </div>
+  <div id="favorites" class="favorites">
+    <div class="fav-close">
+      <p>Favorite pizza</p>
+      <p id="closeFav">X</p>
+    </div>
+    <div class="fav-pizza">
+      <p>Margherita</p>
+    </div>
+  </div>
   <nav>
     <div class="menu">
-      <i class="fa-solid fa-bars"></i>
-      <div class="dropdown">
-        <a href="">Shopping Cart</a>
-        <a href="">Liked Pizzas</a>
-        <a href="">About</a>
-      </div>
+      <i id="burger-menu" class="fa-solid fa-bars"></i>
       <h1>PIZZA DELIGHT</h1>
     </div>
     <div class="icons">
-      <i class="fa-regular fa-heart"></i>
+      <i id="heart" class="fa-regular fa-heart"></i>
       <i class="fa-solid fa-cart-shopping"></i>
     </div>
   </nav>
@@ -56,7 +72,7 @@
     </div>
   </section>
   <section class="pizzas">
-    <img src="images/veggie.png" alt="pizza">
+    <img src="images/vegetarian.png" alt="pizza">
     <div class="names">
       <div class="one" id="bbq" data-topping="Topping: BBQ Sauce, Chicken, Cheese">
         <span>BBQ</span>
@@ -87,7 +103,6 @@
         <div class="dot"></div>
       </div>
     </div>
-    
   </section>
 </body>
 </html>

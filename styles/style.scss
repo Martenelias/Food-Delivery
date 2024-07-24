@@ -1,119 +1,7 @@
 @import "./_header";
 @import "./_fonts-var-mixin";
 @import "./details";
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: radial-gradient(circle, #0A4235, #07322E);
-  @include font-text;
-  color: $white;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.pizzas {
-  display: flex;
-  justify-content: center;
-  align-items: self-end;
-  height: 100vh;
-
-  img {
-    @include flex-align;
-    justify-content: center;
-    width: 600px;
-    height: 600px;
-    padding: 30px;
-    position: absolute;
-    bottom: 0;
-    border: 4px solid $lightGreen;
-    border-radius: 50%;
-    outline: 4px solid $white;
-    outline-offset: -50px;
-    transform: translateY(50%);
-  }
-
-  .names {
-    position: relative;
-    margin-bottom: 730px;
-    width: 1000px;
-    display: flex;
-    justify-content: space-evenly;
-    transform: translateY(50%);
-
-    div {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      color: $lightGreen;
-      &:hover {
-        color: $white;
-        cursor: pointer;
-      }
-
-      span {
-        position: relative;
-      }
-
-      .dot {
-        display: none;
-        position: absolute;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        background-color: $white;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 50px);
-      }
-    }
-
-    .one {
-      margin-top: -10px;
-      margin-right: 350px;
-      transform: rotate(-25deg);
-    }
-
-    .two {
-      margin-top: 90px;
-      margin-right: 600px;
-      transform: rotate(-48deg);
-    }
-
-    .three {
-      margin-top: 220px;
-      margin-right: 740px;
-      transform: rotate(-73deg);
-    }
-
-    .four {
-      margin-top: -10px;
-      margin-left: 350px;
-      transform: rotate(25deg);
-    }
-
-    .five {
-      margin-top: 90px;
-      margin-left: 600px;
-      transform: rotate(48deg);
-    }
-
-    .six {
-      margin-top: 220px;
-      margin-left: 740px;
-      transform: rotate(73deg);
-    }
-    .seven {
-      margin-top: -52px;
-    }
-  }
-}
+@import "./main.scss";
 
 @media screen and (max-width: 1400px) {
   .details .name-size-price {
@@ -296,7 +184,7 @@ body {
     }
   }
   .pizzas .names {
-    margin-bottom: 382px;
+    margin-bottom: 420px;
   }
 }
 
@@ -316,7 +204,7 @@ body {
   .pizzas .names {
     transform: none;
     width: 100vw;
-    margin-bottom: 650px;
+    margin-bottom: 680px;
 
     div {
       width: 100px;
