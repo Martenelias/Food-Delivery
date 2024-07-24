@@ -15,10 +15,38 @@
       <p id="closeMenu">X</p>
     </div>
     <div class="hrefs">
-      <a href="">Cart</a>
-      <a href="">Favorites</a>
-      <a href="">About</a>
+      <p id="getCart">Cart</p>
+      <p id="getFavorites">Favorites</p>
+      <p id="getAbout">About</p>
       <!--abouti pizza suurused, hinnad jne-->
+    </div>
+  </div>
+  <div id="about" class="about">
+    <div class="about-close">
+      <p>About</p>
+      <p id="closeAbout">X</p>
+    </div>
+    <div class="text">
+      <h2>Operating Hours</h2>
+      <ul class="open">
+        <li><p><span>Monday to Friday:</span> 10:00 AM - 11:00 PM</p></li>
+        <li><p><span>Saturday and Sunday:</span> 11:00 AM - 12:00 AM</p></li>
+      </ul>
+      <br>
+      <p>Standard Delivery: 30-45 minutes</p>
+      <br>
+      <h2>Pricing</h2>
+      <ul class="price-text">
+        <li><p><span>Small Pizza (25 cm):</span> €10.00</p></li>
+        <li><p><span>Medium Pizza (30 cm):</span> €15.00</p></li>
+        <li><p><span>Large Pizza (35 cm):</span> €20.00</p></li>
+      </ul>
+      <br>
+      <div class="media-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
     </div>
   </div>
   <div id="favorites" class="favorites">
@@ -47,12 +75,12 @@
     <div class="name-size-price">
       <h2>Margherita</h2>
       <div class="choose-size">
-        <p>S</p>
-        <p>M</p>
-        <p>L</p>
+        <p id="small">S</p>
+        <p id="medium">M</p>
+        <p id="large">L</p>
       </div>
       <div class="price-cart">
-        <p class="price">$ 9.99</p>
+        <p class="price">€ <span id="currentPrice">15</span></p>
         <p><i class="fa-solid fa-cart-shopping"></i></p>
       </div>
     </div>

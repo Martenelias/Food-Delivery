@@ -189,12 +189,27 @@
 }
 
 @media screen and (max-width: 480px) {
+  nav {
+    height: 50px;
+
+    .icons {
+      width: 50px;
+    }
+  }
+
   .details .name-size-price {
     margin-top: 50px;
 
     .choose-size p {
       margin-top: -100px;
     }
+    .price-cart {
+      gap: 20px;
+    }
+  }
+  .details .top-fav .fav {
+    gap: 10px;
+    font-size: 8px;
   }
   .pizzas img {
     border: none;
@@ -203,58 +218,32 @@
   }
   .pizzas .names {
     transform: none;
-    width: 100vw;
-    margin-bottom: 680px;
+    width: 80vw;
+    height: auto;
+    margin-bottom: 430px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
     div {
-      width: 100px;
+      position: inherit;
+      width: auto;
+      text-align: center;
+      display: flex;
       span {
         font-size: 10px;
       }
       .dot {
-        top: 0;
-        left: 0;
-        transform: translate(-200%, 2px);
+        display: none;
       }
     }
 
-    .one {
-      margin-top: 0;
-      margin-right: 0;
+    .one, .two, .three, .four, .five, .six, .seven {
+      margin: 0;
       transform: none;
-    }
-
-    .two {
-      margin-top: 35px;
-      margin-right: 0;
-      transform: none;
-    }
-
-    .three {
-      margin-top: 70px;
-      margin-right: 0;
-      transform: none;
-    }
-
-    .four {
-      margin-top: 105px;
-      margin-left: 0;
-      transform: none;
-    }
-
-    .five {
-      margin-top: 140px;
-      margin-left: 0;
-      transform: none;
-    }
-
-    .six {
-      margin-top: 175px;
-      margin-left: 0;
-      transform: none;
-    }
-    .seven {
-      margin-top: 210px;
     }
   }
 }

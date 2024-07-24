@@ -6,6 +6,10 @@ dot.style.pointerEvents = 'none';
 const image = document.getElementsByTagName('img')[0];
 const currentPizzaNameElement = document.querySelector('.name-size-price h2');
 const toppingsElement = document.getElementById('toppings');
+const small = document.getElementById('small');
+const medium = document.getElementById('medium');
+const large = document.getElementById('large');
+const currentPrice = document.getElementById('currentPrice');
 
 let currentActiveDot = document.querySelector('.pizzas .names .seven');
 currentActiveDot.appendChild(dot);
@@ -13,21 +17,25 @@ currentActiveDot.appendChild(dot);
 const dotChange = () => {
   names.forEach((name) => {
     name.addEventListener('mouseover', () => {
-      name.appendChild(dot);
+      if (window.innerWidth > 480) {
+        name.appendChild(dot);
+      }
     });
 
     name.addEventListener('click', () => {
-      if (currentActiveDot) {
-        const currentDot = currentActiveDot.querySelector('.dot');
-        if (currentDot) {
-          currentDot.style.display = 'none';
+      if (window.innerWidth > 480) {
+        if (currentActiveDot) {
+          const currentDot = currentActiveDot.querySelector('.dot');
+          if (currentDot) {
+            currentDot.style.display = 'none';
+          }
         }
+        const clickedDot = name.querySelector('.dot');
+        if (clickedDot) {
+          clickedDot.style.display = 'flex';
+        }
+        currentActiveDot = name;
       }
-      const clickedDot = name.querySelector('.dot');
-      if (clickedDot) {
-        clickedDot.style.display = 'flex';
-      }
-      currentActiveDot = name;
     });
   });
 };
@@ -54,5 +62,17 @@ const toppingsChange = () => {
   });
 };
 
+const priceChange = () => {
+  small.addEventListener('click', () => {
+    currentPrice.textContent = '10';
+  });
+  medium.addEventListener('click', () => {
+    currentPrice.textContent = '15';
+  });
+  large.addEventListener('click', () => {
+    currentPrice.textContent = '20';
+  });
+};
+
 export default dotChange;
-export { imageChange, toppingsChange };
+export { imageChange, toppingsChange, priceChange };

@@ -21,20 +21,64 @@
     justify-content: flex-end;
     gap: 100px;
     border-bottom: 2px solid $white;
+    p {
+      @include font-header;
+    }
   }
 
   .hrefs {
     margin-top: 70px;
+    @include font-text;
     @include flex-align;
     flex-direction: column;
     gap: 50px;
 
-    a {
-      text-decoration: none;
+    p {
       color: $white;
       &:hover {
         text-decoration: underline;
+        cursor: pointer;
       }
+    }
+  }
+}
+
+.about {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-right: 5px solid $lightGreen;
+  border-bottom: 5px solid $lightGreen;
+  width: 300px;
+  height: 400px;
+  transition: 1s ease-in-out;
+  .about-close {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    border-bottom: 2px solid $white;
+    p {
+      @include font-header;
+    }
+  }
+  .text {
+    margin: 10px;
+    @include font-text;
+    text-align: center;
+    .open li p span, .price-text li p span {
+      color: $lightGreen;
+    }
+    .media-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      cursor: pointer;
     }
   }
 }
@@ -62,9 +106,13 @@
     justify-content: flex-end;
     gap: 80px;
     border-bottom: 2px solid $white;
+    p {
+      @include font-header;
+    }
   }
   .fav-pizza {
     margin-top: 50px;
+    @include font-text;
     @include flex-align;
     justify-content: center;
     p:hover {

@@ -32,19 +32,73 @@
   gap: 100px;
   border-bottom: 2px solid #cbdbd9;
 }
+.dropdown .menu-close p {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .dropdown .hrefs {
   margin-top: 70px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 50px;
 }
-.dropdown .hrefs a {
-  text-decoration: none;
+.dropdown .hrefs p {
   color: #cbdbd9;
 }
-.dropdown .hrefs a:hover {
+.dropdown .hrefs p:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.about {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: #cbdbd9;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-right: 5px solid #2f645e;
+  border-bottom: 5px solid #2f645e;
+  width: 300px;
+  height: 400px;
+  transition: 1s ease-in-out;
+}
+.about .about-close {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  border-bottom: 2px solid #cbdbd9;
+}
+.about .about-close p {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about .text {
+  margin: 10px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+.about .text .open li p span, .about .text .price-text li p span {
+  color: #2f645e;
+}
+.about .text .media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
 }
 
 .favorites {
@@ -72,8 +126,17 @@
   gap: 80px;
   border-bottom: 2px solid #cbdbd9;
 }
+.favorites .fav-close p {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .favorites .fav-pizza {
   margin-top: 50px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,19 +313,73 @@ nav .icons .fa-cart-shopping:hover {
   gap: 100px;
   border-bottom: 2px solid #cbdbd9;
 }
+.dropdown .menu-close p {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .dropdown .hrefs {
   margin-top: 70px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 50px;
 }
-.dropdown .hrefs a {
-  text-decoration: none;
+.dropdown .hrefs p {
   color: #cbdbd9;
 }
-.dropdown .hrefs a:hover {
+.dropdown .hrefs p:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.about {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: #cbdbd9;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-right: 5px solid #2f645e;
+  border-bottom: 5px solid #2f645e;
+  width: 300px;
+  height: 400px;
+  transition: 1s ease-in-out;
+}
+.about .about-close {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  border-bottom: 2px solid #cbdbd9;
+}
+.about .about-close p {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about .text {
+  margin: 10px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+.about .text .open li p span, .about .text .price-text li p span {
+  color: #2f645e;
+}
+.about .text .media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
 }
 
 .favorites {
@@ -290,8 +407,17 @@ nav .icons .fa-cart-shopping:hover {
   gap: 80px;
   border-bottom: 2px solid #cbdbd9;
 }
+.favorites .fav-close p {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .favorites .fav-pizza {
   margin-top: 50px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -718,11 +844,24 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  nav {
+    height: 50px;
+  }
+  nav .icons {
+    width: 50px;
+  }
   .details .name-size-price {
     margin-top: 50px;
   }
   .details .name-size-price .choose-size p {
     margin-top: -100px;
+  }
+  .details .name-size-price .price-cart {
+    gap: 20px;
+  }
+  .details .top-fav .fav {
+    gap: 10px;
+    font-size: 8px;
   }
   .pizzas img {
     border: none;
@@ -731,51 +870,30 @@ body {
   }
   .pizzas .names {
     transform: none;
-    width: 100vw;
-    margin-bottom: 680px;
+    width: 80vw;
+    height: auto;
+    margin-bottom: 430px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
   }
   .pizzas .names div {
-    width: 100px;
+    position: inherit;
+    width: auto;
+    text-align: center;
+    display: flex;
   }
   .pizzas .names div span {
     font-size: 10px;
   }
   .pizzas .names div .dot {
-    top: 0;
-    left: 0;
-    transform: translate(-200%, 2px);
+    display: none;
   }
-  .pizzas .names .one {
-    margin-top: 0;
-    margin-right: 0;
+  .pizzas .names .one, .pizzas .names .two, .pizzas .names .three, .pizzas .names .four, .pizzas .names .five, .pizzas .names .six, .pizzas .names .seven {
+    margin: 0;
     transform: none;
-  }
-  .pizzas .names .two {
-    margin-top: 35px;
-    margin-right: 0;
-    transform: none;
-  }
-  .pizzas .names .three {
-    margin-top: 70px;
-    margin-right: 0;
-    transform: none;
-  }
-  .pizzas .names .four {
-    margin-top: 105px;
-    margin-left: 0;
-    transform: none;
-  }
-  .pizzas .names .five {
-    margin-top: 140px;
-    margin-left: 0;
-    transform: none;
-  }
-  .pizzas .names .six {
-    margin-top: 175px;
-    margin-left: 0;
-    transform: none;
-  }
-  .pizzas .names .seven {
-    margin-top: 210px;
   }
 }/*# sourceMappingURL=style.css.map */
