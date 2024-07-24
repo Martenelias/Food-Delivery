@@ -208,6 +208,9 @@
 
     div {
       width: 100px;
+      span {
+        font-size: 10px;
+      }
       .dot {
         top: 0;
         left: 0;
@@ -255,3 +258,4 @@
     }
   }
 }
+

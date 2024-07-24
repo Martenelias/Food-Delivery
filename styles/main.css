@@ -63,7 +63,7 @@
   font-size: 20px;
   display: flex;
   justify-content: flex-end;
-  gap: 100px;
+  gap: 80px;
   border-bottom: 2px solid #cbdbd9;
 }
 .favorites .fav-pizza {

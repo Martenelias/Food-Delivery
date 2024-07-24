@@ -4,6 +4,8 @@ dot.classList.add('dot');
 dot.style.pointerEvents = 'none';
 
 const image = document.getElementsByTagName('img')[0];
+const currentPizzaNameElement = document.querySelector('.name-size-price h2');
+const toppingsElement = document.getElementById('toppings');
 
 let currentActiveDot = document.querySelector('.pizzas .names .seven');
 currentActiveDot.appendChild(dot);
@@ -36,6 +38,8 @@ const imageChange = () => {
       const imageName = `${name.id}.png`;
       image.src = `../images/${imageName}`;
       console.log(image.src);
+      const currentActivePizza = name.querySelector('span').textContent;
+      currentPizzaNameElement.textContent = currentActivePizza;
     });
   });
 };
@@ -44,8 +48,7 @@ const toppingsChange = () => {
   names.forEach((name) => {
     name.addEventListener('click', () => {
       const toppingsText = name.getAttribute('data-topping');
-      const toppings = document.getElementById('toppings');
-      toppings.innerHTML = toppingsText;
+      toppingsElement.innerHTML = toppingsText;
       console.log(toppingsText);
     });
   });

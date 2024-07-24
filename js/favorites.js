@@ -1,16 +1,37 @@
 const showFav = () => {
   const favorites = document.getElementById('favorites');
   const menu = document.getElementById('heart');
-  favorites.style.marginRight = '-1000px';
   const close = document.getElementById('closeFav');
+
+  favorites.style.marginRight = '-1000px'; // Initially hide the favorites
   close.style.cursor = 'pointer';
 
+  // Show favorites on menu icon click
   menu.addEventListener('click', () => {
+    favorites.style.display = 'flex';
     favorites.style.marginRight = '0';
   });
+
+  // Hide favorites on close button click
   close.addEventListener('click', () => {
     favorites.style.marginRight = '-1000px';
   });
 };
 
+const addFav = () => {
+  const save = document.getElementById('save-fav');
+  const favPizza = document.querySelector('.fav-pizza p');
+
+  save.addEventListener('click', () => {
+    const currentPizzaName = document.querySelector('.name-size-price h2').textContent;
+
+    if (favPizza.textContent && favPizza.textContent !== currentPizzaName) {
+      favPizza.textContent = '';
+    }
+
+    favPizza.textContent = currentPizzaName;
+  });
+};
+
 export default showFav;
+export { addFav };

@@ -6,6 +6,7 @@ const showMenu = () => {
   close.style.cursor = 'pointer';
 
   menu.addEventListener('click', () => {
+    dropdown.style.display = 'flex';
     dropdown.style.marginLeft = '0';
   });
   close.addEventListener('click', () => {

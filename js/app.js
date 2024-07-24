@@ -1,6 +1,9 @@
 import dotChange, { imageChange, toppingsChange } from './imageFunctions.js';
 import showMenu from './menu.js';
-import showFav from './favorites.js';
+import showFav, { addFav } from './favorites.js';
+
+document.getElementById('favorites').style.display = 'none';
+document.getElementById('dropdown').style.display = 'none';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Menu
@@ -8,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Favorites
   showFav();
+
+  // Add your favorite pizza
+  addFav();
 
   // shows only the current chosen pizzas dot.
   dotChange();
