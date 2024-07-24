@@ -82,6 +82,12 @@
     padding-right: 300px;
     color: $lightGreen;
 
+    .toppings {
+      width: 100px;
+      height: 100px;
+      border: 1px solid white;
+    }
+
     .fav {
       @include flex-align;
       justify-content: space-between;

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/style.css">
-  <script src="app.js" defer></script>
+  <script type="module" src="js/app.js"></script>
   <title>Pizza Store</title>
 </head>
 <body>
@@ -41,12 +41,13 @@
       </div>
     </div>
     <div class="top-fav">
-      <div class="toppings">
-        <p>TOPPINGS:</p>
-        <p>Tomato sauce,</p>
-        <p>fresh mozzarella,</p>
-        <p>fresh basil,</p>
-        <p>olives.</p>
+      <div>
+        <p id="toppings" class="toppings">
+        TOPPINGS:
+        Tomato,
+        Mozzarella,
+        Basil.
+        </p>
       </div>
       <div class="fav">
         <p>SAVE TO FAVORITES</p>
@@ -57,14 +58,36 @@
   <section class="pizzas">
     <img src="images/veggie.png" alt="pizza">
     <div class="names">
-      <div class="one"><span>BBQ</span><div class="dot"></div></div>
-      <div class="two"><span>ITALIAN</span><div class="dot"></div></div>
-      <div class="three"><span>MARGHERITA</span><div class="dot"></div></div>
-      <div class="four"><span>PEPPERONI</span><div class="dot"></div></div>
-      <div class="five"><span>SUPREME</span><div class="dot"></div></div>
-      <div class="six"><span>TOMATO</span><div class="dot"></div></div>
-      <div class="seven"><span>VEGETERIAN</span><div class="dot"></div></div>
+      <div class="one" id="bbq" data-topping="Topping: BBQ Sauce, Chicken, Cheese">
+        <span>BBQ</span>
+        <div class="dot"></div>
+      </div>
+      <div class="two" id="italian" data-topping="Topping: Tomato Sauce, Mozzarella, Basil">
+        <span>ITALIAN</span>
+        <div class="dot"></div>
+      </div>
+      <div class="three" id="margherita" data-topping="Topping: Tomato, Mozzarella, Basil">
+        <span>MARGHERITA</span>
+        <div class="dot"></div>
+      </div>
+      <div class="four" id="pepperoni" data-topping="Topping: Pepperoni, Cheese, Tomato Sauce">
+        <span>PEPPERONI</span>
+        <div class="dot"></div>
+      </div>
+      <div class="five" id="supreme" data-topping="Topping: Pepperoni, Sausage, Vegetables">
+        <span>SUPREME</span>
+        <div class="dot"></div>
+      </div>
+      <div class="six" id="tomato" data-topping="Topping: Tomato, Basil, Cheese">
+        <span>TOMATO</span>
+        <div class="dot"></div>
+      </div>
+      <div class="seven" id="vegetarian" data-topping="Topping: Bell Peppers, Olives, Onions">
+        <span>VEGETARIAN</span>
+        <div class="dot"></div>
+      </div>
     </div>
+    
   </section>
 </body>
 </html>

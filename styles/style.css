@@ -134,6 +134,11 @@ nav .icons .fa-cart-shopping:hover {
   padding-right: 300px;
   color: #2f645e;
 }
+.details .top-fav .toppings {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+}
 .details .top-fav .fav {
   display: flex;
   align-items: center;
@@ -302,6 +307,9 @@ body {
     padding-right: 100px;
     font-size: 12px;
   }
+  .details .top-fav .toppings {
+    width: 80px;
+  }
   .details .top-fav .fav .fa-heart {
     font-size: 22px;
   }
@@ -317,7 +325,7 @@ body {
     outline-offset: -30px;
   }
   .pizzas .names {
-    margin-bottom: 430px;
+    margin-bottom: 460px;
     width: 1000px;
   }
   .pizzas .names div {
