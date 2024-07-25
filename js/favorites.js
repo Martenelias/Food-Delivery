@@ -2,9 +2,16 @@ const showFav = () => {
   const favorites = document.getElementById('favorites');
   const menu = document.getElementById('heart');
   const close = document.getElementById('closeFav');
+  const getFavorites = document.getElementById('getFavorites');
 
   favorites.style.marginRight = '-1000px'; // Initially hide the favorites
   close.style.cursor = 'pointer';
+
+  getFavorites.addEventListener('click', () => {
+    document.getElementById('dropdown').style.display = 'none';
+    favorites.style.display = 'flex';
+    favorites.style.marginRight = '0';
+  });
 
   // Show favorites on menu icon click
   menu.addEventListener('click', () => {

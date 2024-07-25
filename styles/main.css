@@ -140,6 +140,82 @@
   cursor: pointer;
 }
 
+.cart {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #cbdbd9;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-left: 5px solid #2f645e;
+  border-bottom: 5px solid #2f645e;
+  width: 350px;
+  height: 400px;
+  transition: 1s ease-in-out;
+}
+.cart .cart-close {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 120px;
+  border-bottom: 2px solid #cbdbd9;
+}
+.cart .cart-close p {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cart .cart-items {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.cart .cart-items .cart-items-detail {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.cart .cart-items .cart-items-detail .plus, .cart .cart-items .cart-items-detail .minus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  color: #cbdbd9;
+  font-size: 20px;
+  border: 3px solid #E94723;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart .cart-items .cart-items-detail .plus:hover, .cart .cart-items .cart-items-detail .minus:hover {
+  background-color: #F0681F;
+}
+.cart .cart-items .cart-items-detail .del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 25px;
+  background-color: transparent;
+  color: #cbdbd9;
+  font-size: 14px;
+  border: 3px solid #E94723;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart .cart-items .cart-items-detail .del:hover {
+  background-color: #F0681F;
+}
+
 nav {
   height: 100px;
   padding-left: 50px;
@@ -178,11 +254,30 @@ nav .icons .fa-heart:hover {
   cursor: pointer;
   color: #cbdbd9;
 }
-nav .icons .fa-cart-shopping {
+nav .icons div {
+  position: relative;
+}
+nav .icons div .fa-cart-shopping {
   font-size: 28px;
 }
-nav .icons .fa-cart-shopping:hover {
+nav .icons div .fa-cart-shopping:hover {
   cursor: pointer;
+}
+nav .icons div p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E94723;
+  color: #cbdbd9;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  margin-top: -5px;
+  margin-right: -5px;
 }
 
 .details {

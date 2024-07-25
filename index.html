@@ -18,7 +18,6 @@
       <p id="getCart">Cart</p>
       <p id="getFavorites">Favorites</p>
       <p id="getAbout">About</p>
-      <!--abouti pizza suurused, hinnad jne-->
     </div>
   </div>
   <div id="about" class="about">
@@ -58,6 +57,22 @@
       <p></p>
     </div>
   </div>
+  <div id="cart" class="cart">
+    <div class="cart-close">
+      <p>Cart</p>
+      <p id="closeCart">X</p>
+    </div>
+    <div class="cart-items">
+      <div class="cart-items-detail">
+        <p id="cart-pizza-name">Margherita</p>
+        <p id="cart-item-num">1</p>
+        <button id="plus" class="plus">+</button>
+        <button id="min" class="minus">-</button>
+        <p>€<span id="cart-item-cost">35</span></p>
+        <button id="del" class="del">Delete</button>
+      </div>
+    </div>
+  </div>
   <nav>
     <div class="menu">
       <i id="burger-menu" class="fa-solid fa-bars"></i>
@@ -65,7 +80,10 @@
     </div>
     <div class="icons">
       <i id="heart" class="fa-regular fa-heart"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
+      <div>
+        <i id="shopping-cart" class="fa-solid fa-cart-shopping"></i>
+        <p>0</p>
+      </div>
     </div>
   </nav>
   <section class="details">
