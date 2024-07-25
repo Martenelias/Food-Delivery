@@ -1,13 +1,6 @@
 const cart = document.getElementById('cart');
 const shopCart = document.getElementById('shopping-cart');
-const getName = document.getElementById('name-size-price h2').textContent;
-const price = document.getElementById('currentPrice').textContent;
-const pizzaName = document.getElementById('cart-pizza-name').textContent;
-const count = document.getElementById('cart-item-num').textContent;
-const plus = document.getElementById('plus');
-const min = document.getElementById('min');
-const itemCost = document.getElementById('cart-item-cost').textContent;
-const del = document.getElementById('del');
+const cartAddIcon = document.getElementById('cart-shop-icon');
 
 const showCart = () => {
   cart.style.marginRight = '-1000px';
@@ -25,13 +18,20 @@ const showCart = () => {
     cart.style.display = 'flex';
     cart.style.marginRight = '0';
   });
+
   close.addEventListener('click', () => {
     cart.style.marginRight = '-1000px';
   });
 };
 
 const addItem = () => {
-
+  cartAddIcon.addEventListener('click', () => {
+    const getName = document.querySelector('.name-size-price h2').textContent;
+    const price = document.getElementById('currentPrice').textContent;
+    document.getElementById('cart-item-cost').textContent = price;
+    console.log(document.getElementById('cart-item-cost').textContent);
+    document.getElementById('cart-pizza-name').textContent = getName;
+  });
 };
 
 export default showCart;
