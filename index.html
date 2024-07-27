@@ -65,9 +65,12 @@
     <div class="cart-items">
       
     </div>
-    <div class="total-container">
-      <p>Total: </p>
-      <p>€<span id="total-cost">125</span></p>
+    <div class="total-purchase">
+      <div class="total-container">
+        <p>Total: </p>
+        <p>€<span id="total-cost">125</span></p>
+      </div>
+      <button class="purchase" type="button">PURCHASE</button>
     </div>
   </div>
   <nav>
@@ -79,7 +82,7 @@
       <i id="heart" class="fa-regular fa-heart"></i>
       <div>
         <i id="shopping-cart" class="fa-solid fa-cart-shopping"></i>
-        <p>0</p>
+        <p id="items-length">0</p>
       </div>
     </div>
   </nav>
@@ -90,9 +93,9 @@
     <div class="name-size-price">
       <h2>Margherita</h2>
       <div class="choose-size">
-        <p id="small">S</p>
-        <p id="medium">M</p>
-        <p id="large">L</p>
+        <p id="small" class="size-sml">S</p>
+        <p id="medium" class="size-sml">M</p>
+        <p id="large" class="size-sml">L</p>
       </div>
       <div class="price-cart">
         <p class="price">€ <span id="currentPrice">15</span></p>

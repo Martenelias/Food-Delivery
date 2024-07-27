@@ -1,7 +1,7 @@
 import dotChange, { imageChange, toppingsChange, priceChange } from './imageFunctions.js';
 import showMenu, { showAbout } from './menu.js';
 import showFav, { addFav } from './favorites.js';
-import showCart, { addItem, removeItems } from './cart.js';
+import showCart, { addItem, removeItems, setupSizeListeners } from './cart.js';
 
 document.getElementById('favorites').style.display = 'none';
 document.getElementById('dropdown').style.display = 'none';
@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Removes items from the cart
   removeItems();
+
+  // Selects correct pizza size
+  setupSizeListeners();
 
   // shows only the current chosen pizzas dot
   dotChange();

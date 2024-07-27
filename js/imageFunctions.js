@@ -45,7 +45,6 @@ const imageChange = () => {
     name.addEventListener('click', () => {
       const imageName = `${name.id}.png`;
       image.src = `../images/${imageName}`;
-      console.log(image.src);
       const currentActivePizza = name.querySelector('span').textContent;
       currentPizzaNameElement.textContent = currentActivePizza;
     });
@@ -57,7 +56,6 @@ const toppingsChange = () => {
     name.addEventListener('click', () => {
       const toppingsText = name.getAttribute('data-topping');
       toppingsElement.innerHTML = toppingsText;
-      console.log(toppingsText);
     });
   });
 };

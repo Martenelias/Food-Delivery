@@ -160,7 +160,7 @@
   border-left: 5px solid #2f645e;
   border-bottom: 5px solid #2f645e;
   width: 350px;
-  height: 400px;
+  height: 500px;
   transition: 1s ease-in-out;
 }
 .cart .cart-close {
@@ -177,15 +177,37 @@
   font-weight: 400;
   font-style: normal;
 }
-.cart .total-container {
+.cart .total-purchase {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin: 10px;
   padding-top: 10px;
   gap: 20px;
   font-size: 20px;
   border-top: 2px solid #cbdbd9;
+}
+.cart .total-purchase .total-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cart .total-purchase .purchase {
+  background-color: transparent;
+  font-size: 20px;
+  color: #cbdbd9;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  padding: 5px;
+  border: 3px solid #F0681F;
+  border-radius: 5px;
+}
+.cart .total-purchase .purchase:hover {
+  cursor: pointer;
+  background-color: #F0681F;
 }
 .cart .cart-items {
   height: 100%;
@@ -226,7 +248,7 @@
   background-color: transparent;
   color: #cbdbd9;
   font-size: 20px;
-  border: 3px solid #E94723;
+  border: 3px solid #F0681F;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -563,7 +585,7 @@ nav .icons div p {
   border-left: 5px solid #2f645e;
   border-bottom: 5px solid #2f645e;
   width: 350px;
-  height: 400px;
+  height: 500px;
   transition: 1s ease-in-out;
 }
 .cart .cart-close {
@@ -580,15 +602,37 @@ nav .icons div p {
   font-weight: 400;
   font-style: normal;
 }
-.cart .total-container {
+.cart .total-purchase {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin: 10px;
   padding-top: 10px;
   gap: 20px;
   font-size: 20px;
   border-top: 2px solid #cbdbd9;
+}
+.cart .total-purchase .total-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cart .total-purchase .purchase {
+  background-color: transparent;
+  font-size: 20px;
+  color: #cbdbd9;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  padding: 5px;
+  border: 3px solid #F0681F;
+  border-radius: 5px;
+}
+.cart .total-purchase .purchase:hover {
+  cursor: pointer;
+  background-color: #F0681F;
 }
 .cart .cart-items {
   height: 100%;
@@ -629,7 +673,7 @@ nav .icons div p {
   background-color: transparent;
   color: #cbdbd9;
   font-size: 20px;
-  border: 3px solid #E94723;
+  border: 3px solid #F0681F;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -1096,6 +1140,31 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  .dropdown {
+    width: 100vw;
+    height: 100vh;
+  }
+  .about {
+    width: 100vw;
+    height: 100vh;
+  }
+  .favorites {
+    width: 100vw;
+    height: 100vh;
+  }
+  .cart {
+    width: 100vw;
+    height: 100vh;
+  }
+  .cart .total-purchase {
+    font-size: 12px;
+  }
+  .cart .total-purchase .purchase {
+    font-size: 14px;
+  }
+  .cart .cart-items .cart-items-detail {
+    font-size: 12px;
+  }
   nav {
     height: 50px;
   }
@@ -1147,5 +1216,11 @@ body {
   .pizzas .names .one, .pizzas .names .two, .pizzas .names .three, .pizzas .names .four, .pizzas .names .five, .pizzas .names .six, .pizzas .names .seven {
     margin: 0;
     transform: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .pizzas img {
+    width: 250px;
+    height: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

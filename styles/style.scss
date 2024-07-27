@@ -200,6 +200,32 @@
 }
 
 @media screen and (max-width: 480px) {
+  .dropdown {
+    width: 100vw;
+    height: 100vh;
+  }
+  .about {
+    width: 100vw;
+    height: 100vh;
+  }
+  .favorites {
+    width: 100vw;
+    height: 100vh;
+  }
+  .cart {
+    width: 100vw;
+    height: 100vh;
+    .total-purchase {
+      font-size: 12px;
+      .purchase {
+        font-size: 14px;
+      }
+    }
+    .cart-items .cart-items-detail {
+      font-size: 12px;
+    }
+  }
+  
   nav {
     height: 50px;
 
@@ -259,3 +285,9 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  .pizzas img {
+    width: 250px;
+    height: 250px;
+  }
+}
