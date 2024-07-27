@@ -141,8 +141,19 @@
     .icons {
       width: 80px;
 
-      .fa-heart, .fa-cart-shopping {
+      .fa-heart {
         font-size: 18px;
+        
+      }
+      div {
+        .fa-cart-shopping {
+          font-size: 18px;
+        }
+        p {
+          width: 12px;
+          height: 12px;
+          font-size: 8px;
+        }
       }
     }
   }

@@ -130,6 +130,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: $white;
   background-image: radial-gradient(circle, #0A4235, #07322E);
   border-left: 5px solid $lightGreen;
@@ -149,27 +150,52 @@
       @include font-header;
     }
   }
+  .total-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+    padding-top: 10px;
+    gap: 20px;
+    font-size: 20px;
+    border-top: 2px solid $white; 
+  }
   .cart-items {
+    height: 100%;
+    overflow: auto;
     @include font-text;
     .cart-items-detail {
+      margin: 10px;
       padding: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 20px;
-      .plus, .minus {
+      box-shadow: 5px 5px 10px $lightGreen;
+      .details-container {
         @include flex-align;
         justify-content: center;
-        width: 25px;
-        height: 25px;
-        background-color: transparent;
-        color: $white;
-        font-size: 20px;
-        border: 3px solid $darkOrange;
-        border-radius: 5px;
-        cursor: pointer;
-        &:hover {
-          background-color: $lightOrange;
+        flex-direction: column;
+        gap: 10px;
+        .details-box {
+          @include flex-align;
+          justify-content: center;
+          gap: 10px;
+          .plus, .minus {
+            @include flex-align;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            background-color: transparent;
+            color: $white;
+            font-size: 20px;
+            border: 3px solid $darkOrange;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: $lightOrange;
+            }
+          }
         }
       }
       .del {
@@ -178,13 +204,12 @@
         width: 60px;
         height: 25px;
         background-color: transparent;
-        color: $white;
-        font-size: 14px;
-        border: 3px solid $darkOrange;
-        border-radius: 5px;
+        color: $lightOrange;
+        font-size: 20px;
+        border: none;
         cursor: pointer;
         &:hover {
-          background-color: $lightOrange;
+          color: $white;
         }
       }
     }

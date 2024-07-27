@@ -24,15 +24,54 @@ const showCart = () => {
   });
 };
 
+const removeItems = () => {
+  const removeCartItemsButtons = document.getElementsByClassName('del');
+  for (let i = 0; i < removeCartItemsButtons.length; i += 1) {
+    const button = removeCartItemsButtons[i];
+    button.addEventListener('click', (event) => {
+      const buttonClicked = event.target;
+      buttonClicked.parentElement.parentElement.remove();
+    });
+  }
+};
+
 const addItem = () => {
   cartAddIcon.addEventListener('click', () => {
     const getName = document.querySelector('.name-size-price h2').textContent;
     const price = document.getElementById('currentPrice').textContent;
-    document.getElementById('cart-item-cost').textContent = price;
-    console.log(document.getElementById('cart-item-cost').textContent);
-    document.getElementById('cart-pizza-name').textContent = getName;
+    let getSize = '';
+
+    if (price === 10) {
+      getSize = 'S';
+    } else if (price === 15) {
+      getSize = 'M';
+    } else {
+      getSize = 'L';
+    }
+
+    const cartItemsContainer = document.querySelector('.cart-items');
+    const newItem = document.createElement('div');
+    newItem.classList.add('cart-items-detail');
+    newItem.innerHTML = `
+      <div class="details-container">
+          <div class="details-box">
+            <p id="cart-pizza-name">${getName}</p>
+            <p id="getSize">${getSize}</p>
+          </div>
+          <div class="details-box">
+            <button id="plus" class="plus">+</button>
+            <p id="cart-item-num">1</p>
+            <button id="min" class="minus">-</button>
+          </div>
+        </div>
+        <p>€<span id="cart-item-cost">${price}</span></p>
+        <button id="del" class="del"><i class="fa-solid fa-trash"></i></button>
+      </div>  
+    `;
+    cartItemsContainer.appendChild(newItem);
+    removeItems();
   });
 };
 
 export default showCart;
-export { addItem };
+export { addItem, removeItems };
