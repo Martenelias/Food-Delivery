@@ -25,6 +25,7 @@ const showFav = () => {
   });
 };
 
+// Saves your favorite pizza to favorites
 const addFav = () => {
   const save = document.getElementById('save-fav');
   const favPizza = document.querySelector('.fav-pizza p');

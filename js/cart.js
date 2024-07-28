@@ -3,6 +3,7 @@ const shopCart = document.getElementById('shopping-cart');
 const cartAddIcon = document.getElementById('cart-shop-icon');
 let selectedSize = '';
 
+// Manage visibility of the shopping cart menu
 const showCart = () => {
   cart.style.marginRight = '-1000px';
   const close = document.getElementById('closeCart');
@@ -25,12 +26,14 @@ const showCart = () => {
   });
 };
 
+// Updates the number of itmes in the cart
 const updateItemsLength = () => {
   const cartItems = document.querySelector('.cart-items');
   const itemsLength = cartItems ? cartItems.getElementsByClassName('cart-items-detail').length : 0;
   document.getElementById('items-length').textContent = itemsLength;
 };
 
+// Updates and calculates the total price of the items in the cart
 const updateCartTotal = () => {
   let total = 0;
   const cartItems = document.querySelector('.cart-items');
@@ -48,6 +51,7 @@ const updateCartTotal = () => {
   updateItemsLength();
 };
 
+// Removes single items from the cart list
 const removeItems = () => {
   const removeCartItemsButtons = document.getElementsByClassName('del');
   for (let i = 0; i < removeCartItemsButtons.length; i += 1) {
@@ -64,13 +68,14 @@ const removeItems = () => {
       const cartItemsContainer = document.querySelector('.cart-items');
       while (cartItemsContainer.firstChild) {
         cartItemsContainer.removeChild(cartItemsContainer.firstChild);
-        alert('Thanks for shopping at Pizza Delight!');
+        alert('Thank you for your order, your order will be delivered to you shortly! Enjoy!');
       }
       updateCartTotal();
     });
   }
 };
 
+// Updates quantity and the cost of a single item
 const updateItemQuantity = (item, delta) => {
   const itemNumElement = item.querySelector('#cart-item-num');
   const itemCostElement = item.querySelector('#cart-item-cost');
@@ -88,6 +93,7 @@ const updateItemQuantity = (item, delta) => {
   updateCartTotal();
 };
 
+// Adds a item in the cart with all details
 const addItem = () => {
   cartAddIcon.addEventListener('click', () => {
     const getNameElement = document.querySelector('.name-size-price h2');

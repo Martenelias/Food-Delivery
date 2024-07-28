@@ -14,6 +14,7 @@ const showMenu = () => {
   });
 };
 
+// Opens about popup
 const showAbout = () => {
   const about = document.getElementById('about');
   const getAbout = document.getElementById('getAbout');

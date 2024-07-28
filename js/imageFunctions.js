@@ -14,6 +14,7 @@ const currentPrice = document.getElementById('currentPrice');
 let currentActiveDot = document.querySelector('.pizzas .names .seven');
 currentActiveDot.appendChild(dot);
 
+// Changes dot position whereever clicked
 const dotChange = () => {
   names.forEach((name) => {
     name.addEventListener('mouseover', () => {
@@ -40,6 +41,7 @@ const dotChange = () => {
   });
 };
 
+// Changes image when clicked
 const imageChange = () => {
   names.forEach((name) => {
     name.addEventListener('click', () => {
@@ -51,6 +53,7 @@ const imageChange = () => {
   });
 };
 
+// Changes toppings to the correct pizza
 const toppingsChange = () => {
   names.forEach((name) => {
     name.addEventListener('click', () => {

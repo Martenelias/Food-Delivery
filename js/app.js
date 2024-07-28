@@ -3,6 +3,7 @@ import showMenu, { showAbout } from './menu.js';
 import showFav, { addFav } from './favorites.js';
 import showCart, { addItem, removeItems, setupSizeListeners } from './cart.js';
 
+// Extra window elements wont pop up when reload page
 document.getElementById('favorites').style.display = 'none';
 document.getElementById('dropdown').style.display = 'none';
 document.getElementById('about').style.display = 'none';
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Selects correct pizza size
   setupSizeListeners();
 
-  // shows only the current chosen pizzas dot
+  // Shows only the current chosen pizzas dot
   dotChange();
 
   // Changes image when clicked
