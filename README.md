@@ -1,7 +1,7 @@
 ![Vector 11M logo](https://github.com/Martenelias/Small-projects/assets/124877606/b4005eff-cfa4-4bae-b81a-2d6f8f390906) 
 
 # Pizza Delivery Project 
-Welcome to the Pizza Delight! This is a responsive, mobile-friendly web application that allows users to choose their favorite pizzas, add them to a cart, and make purchases.  
+Welcome to the ***Pizza Delight!*** This is a responsive, mobile-friendly web application that allows users to choose their favorite pizzas, add them to a cart, and make purchases.  
 
 ## Features 
 - ***Responsive Design:*** Optimized for both desktop and mobile devices. 
@@ -19,18 +19,14 @@ Welcome to the Pizza Delight! This is a responsive, mobile-friendly web applicat
 Make sure you have npm and Node.js installed. 
 
 - npm 
-`npm install npm@latest -g
-` 
+`npm install npm@latest -g`  
 
-- Clone reposiroty`
-git clone https://github.com/your-username/pizza-delivery.git
+- Clone reposiroty 
+`git clone https://github.com/your-username/pizza-delivery.git` 
 
-`
 - Directory 
 `cd pizza-delivery` 
 
-- npm packages
-`npm install
-
-` 
+- npm packages 
+`npm install`  
 
