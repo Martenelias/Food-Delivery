@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/style.css">
+  <script type="module" src="js/app.js"></script>
+  <title>Pizza Store</title>
+</head>
+<body>
+  <div id="dropdown" class="dropdown">
+    <div class="menu-close">
+      <p>MENU</p>
+      <i id="closeMenu" class="fa-solid fa-x"></i>
+    </div>
+    <div class="hrefs">
+      <p id="getCart">Cart</p>
+      <p id="getFavorites">Favorites</p>
+      <p id="getAbout">About</p>
+    </div>
+  </div>
+  <div id="about" class="about">
+    <div class="about-close">
+      <p>About</p>
+      <i id="closeAbout" class="fa-solid fa-x"></i>
+    </div>
+    <div class="text">
+      <h2>Operating Hours</h2>
+      <ul class="open">
+        <li><p><span>Monday to Friday:</span> 10:00 AM - 11:00 PM</p></li>
+        <li><p><span>Saturday and Sunday:</span> 11:00 AM - 12:00 AM</p></li>
+      </ul>
+      <br>
+      <p>Standard Delivery: 30-45 minutes</p>
+      <br>
+      <h2>Pricing</h2>
+      <ul class="price-text">
+        <li><p><span>Small Pizza (25 cm):</span> €10.00</p></li>
+        <li><p><span>Medium Pizza (30 cm):</span> €15.00</p></li>
+        <li><p><span>Large Pizza (35 cm):</span> €20.00</p></li>
+      </ul>
+      <br>
+      <div class="media-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <div id="favorites" class="favorites">
+    <div class="fav-close">
+      <p>Favorite pizza</p>
+      <i id="closeFav" class="fa-solid fa-x"></i>
+    </div>
+    <div class="fav-pizza">
+      <p></p>
+    </div>
+  </div>
+  <div id="cart" class="cart">
+    <div class="cart-close">
+      <p>Cart</p>
+      <i id="closeCart" class="fa-solid fa-x"></i>
+    </div>
+    <div class="cart-items">
+      
+    </div>
+    <div class="total-purchase">
+      <div class="total-container">
+        <p>Total: </p>
+        <p>€<span id="total-cost">125</span></p>
+      </div>
+      <button class="purchase" type="button">PURCHASE</button>
+    </div>
+  </div>
+  <nav>
+    <div class="menu">
+      <i id="burger-menu" class="fa-solid fa-bars"></i>
+      <h1>PIZZA DELIGHT</h1>
+    </div>
+    <div class="icons">
+      <i id="heart" class="fa-regular fa-heart"></i>
+      <div>
+        <i id="shopping-cart" class="fa-solid fa-cart-shopping"></i>
+        <p id="items-length">0</p>
+      </div>
+    </div>
+  </nav>
+  <section class="details">
+    <div class="size">
+      <h2>SELECT SIZE</h2>
+    </div>
+    <div class="name-size-price">
+      <h2>Margherita</h2>
+      <div class="choose-size">
+        <p id="small" class="size-sml">S</p>
+        <p id="medium" class="size-sml">M</p>
+        <p id="large" class="size-sml">L</p>
+      </div>
+      <div class="price-cart">
+        <p class="price">€ <span id="currentPrice">15</span></p>
+        <p><i id="cart-shop-icon" class="fa-solid fa-cart-shopping"></i></p>
+      </div>
+    </div>
+    <div class="top-fav">
+      <div>
+        <p id="toppings" class="toppings">
+        TOPPINGS:
+        Tomato,
+        Mozzarella,
+        Basil.
+        </p>
+      </div>
+      <div class="fav">
+        <p>SAVE TO FAVORITES</p>
+        <p><i id="save-fav" class="fa-regular fa-heart"></i></p>
+      </div>
+    </div>
+  </section>
+  <section class="pizzas">
+    <img src="images/vegetarian.png" alt="pizza">
+    <div class="names">
+      <div class="one" id="bbq" data-topping="Topping: BBQ Sauce, Chicken, Cheese">
+        <span>BBQ</span>
+        <div class="dot"></div>
+      </div>
+      <div class="two" id="italian" data-topping="Topping: Tomato Sauce, Mozzarella, Basil">
+        <span>ITALIAN</span>
+        <div class="dot"></div>
+      </div>
+      <div class="three" id="margherita" data-topping="Topping: Tomato, Mozzarella, Basil">
+        <span>MARGHERITA</span>
+        <div class="dot"></div>
+      </div>
+      <div class="four" id="pepperoni" data-topping="Topping: Pepperoni, Cheese, Tomato Sauce">
+        <span>PEPPERONI</span>
+        <div class="dot"></div>
+      </div>
+      <div class="five" id="supreme" data-topping="Topping: Pepperoni, Sausage, Vegetables">
+        <span>SUPREME</span>
+        <div class="dot"></div>
+      </div>
+      <div class="six" id="tomato" data-topping="Topping: Tomato, Basil, Cheese">
+        <span>TOMATO</span>
+        <div class="dot"></div>
+      </div>
+      <div class="seven" id="vegetarian" data-topping="Topping: Bell Peppers, Olives, Onions">
+        <span>VEGETARIAN</span>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

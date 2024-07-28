@@ -1,0 +1,115 @@
+@media screen and (max-width: 768px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    height: 80px;
+  }
+  nav .menu {
+    width: 150px;
+  }
+  nav .menu .fa-bars {
+    font-size: 18px;
+  }
+  nav .icons {
+    width: 80px;
+  }
+  nav .icons .fa-heart, nav .icons .fa-cart-shopping {
+    font-size: 18px;
+  }
+  .details .name-size-price {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .details .name-size-price .choose-size p {
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+  }
+  .details .name-size-price .price-cart .price {
+    font-size: 12px;
+  }
+  .details .name-size-price .price-cart .fa-cart-shopping {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .details .name-size-price .price-cart .fa-cart-shopping:hover {
+    font-size: 14px;
+  }
+  .details .top-fav {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+  }
+  .details .top-fav .fav {
+    gap: 20px;
+    font-size: 10px;
+  }
+  .details .top-fav .fav .fa-heart {
+    font-size: 18px;
+  }
+  .pizzas .names {
+    margin-bottom: 382px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .details .name-size-price {
+    margin-top: 50px;
+  }
+  .details .name-size-price .choose-size p {
+    margin-top: -100px;
+  }
+  .pizzas img {
+    border: none;
+    outline: none;
+    padding: 0;
+  }
+  .pizzas .names {
+    transform: none;
+    width: 100vw;
+    margin-bottom: 650px;
+  }
+  .pizzas .names div {
+    width: 100px;
+  }
+  .pizzas .names div .dot {
+    top: 0;
+    left: 0;
+    transform: translate(-200%, 2px);
+  }
+  .pizzas .names .one {
+    margin-top: 0;
+    margin-right: 0;
+    transform: none;
+  }
+  .pizzas .names .two {
+    margin-top: 35px;
+    margin-right: 0;
+    transform: none;
+  }
+  .pizzas .names .three {
+    margin-top: 70px;
+    margin-right: 0;
+    transform: none;
+  }
+  .pizzas .names .four {
+    margin-top: 105px;
+    margin-left: 0;
+    transform: none;
+  }
+  .pizzas .names .five {
+    margin-top: 140px;
+    margin-left: 0;
+    transform: none;
+  }
+  .pizzas .names .six {
+    margin-top: 175px;
+    margin-left: 0;
+    transform: none;
+  }
+  .pizzas .names .seven {
+    margin-top: 210px;
+  }
+}/*# sourceMappingURL=media.css.map */

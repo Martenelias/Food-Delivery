@@ -1,0 +1,297 @@
+@import "./fonts-var-mixin";
+
+.dropdown {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-right: 5px solid $lightGreen;
+  border-bottom: 5px solid $lightGreen;
+  width: 300px;
+  height: 400px;
+  transition: 1s ease-in-out;
+
+  .menu-close {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    border-bottom: 2px solid $white;
+    p {
+      @include font-header;
+    }
+  }
+
+  .hrefs {
+    margin-top: 70px;
+    @include font-text;
+    @include flex-align;
+    flex-direction: column;
+    gap: 50px;
+
+    p {
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.about {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-right: 5px solid $lightGreen;
+  border-bottom: 5px solid $lightGreen;
+  width: 300px;
+  height: 400px;
+  transition: 1s ease-in-out;
+  .about-close {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    border-bottom: 2px solid $white;
+    p {
+      @include font-header;
+    }
+  }
+  .text {
+    margin: 10px;
+    @include font-text;
+    text-align: center;
+    .open li p span, .price-text li p span {
+      color: $lightGreen;
+    }
+    .media-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.favorites {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-left: 5px solid $lightGreen;
+  border-bottom: 5px solid $lightGreen;
+  width: 300px;
+  height: 200px;
+  transition: 1s ease-in-out;
+  .fav-close {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+    border-bottom: 2px solid $white;
+    p {
+      @include font-header;
+    }
+  }
+  .fav-pizza {
+    margin-top: 50px;
+    @include font-text;
+    @include flex-align;
+    justify-content: center;
+    p:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.cart {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $white;
+  background-image: radial-gradient(circle, #0A4235, #07322E);
+  border-left: 5px solid $lightGreen;
+  border-bottom: 5px solid $lightGreen;
+  width: 350px;
+  height: 500px;
+  transition: 1s ease-in-out;
+  .cart-close {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 120px;
+    border-bottom: 2px solid $white;
+    p {
+      @include font-header;
+    }
+  }
+  .total-purchase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding-top: 10px;
+    gap: 20px;
+    font-size: 20px;
+    border-top: 2px solid $white;
+    .total-container {
+       @include flex-align;
+       justify-content: center;
+       gap: 20px;
+    }
+    .purchase {
+      background-color: transparent;
+      font-size: 20px;
+      color: $white;
+      @include font-text;
+      padding: 5px;
+      border: 3px solid $lightOrange;
+      border-radius: 5px;
+      &:hover {
+        cursor: pointer;
+        background-color: $lightOrange;
+      }
+    }
+  }
+  .cart-items {
+    height: 100%;
+    overflow: auto;
+    @include font-text;
+    .cart-items-detail {
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 5px 5px 10px $lightGreen;
+      .details-container {
+        @include flex-align;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        .details-box {
+          @include flex-align;
+          justify-content: center;
+          gap: 10px;
+          .plus, .minus {
+            @include flex-align;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            background-color: transparent;
+            color: $white;
+            font-size: 20px;
+            border: 3px solid $lightOrange;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: $lightOrange;
+            }
+          }
+        }
+      }
+      .del {
+        @include flex-align;
+        justify-content: center;
+        width: 60px;
+        height: 25px;
+        background-color: transparent;
+        color: $lightOrange;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  height: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  @include flex-align;
+  justify-content: space-between;
+
+  .menu {
+    @include font-header;
+    width: 240px;
+    @include flex-align;
+    justify-content: space-between;
+
+    .fa-bars {
+      color: $white;
+      font-size: 28px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .icons {
+    width: 100px;
+    @include flex-align;
+    justify-content: space-between;
+
+    .fa-heart {
+      font-size: 28px;
+      color: $lightGreen;
+      &:hover {
+        cursor: pointer;
+        color: $white;
+      }
+    }
+    div {
+      position: relative;
+      .fa-cart-shopping {
+        font-size: 28px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      p {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $darkOrange;
+        color: $white;
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        top: 0;
+        right: 0;
+        margin-top: -5px;
+        margin-right: -5px;
+      }
+    } 
+  }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+@mixin font-header {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-text {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+$lightGreen: #2f645e;
+$darkGreen: #07322E;
+$white: #cbdbd9;
+$darkOrange: #E94723;
+$lightOrange: #F0681F;
