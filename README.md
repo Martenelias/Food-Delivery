@@ -1,66 +1,36 @@
-# Food-Delivery
+![Vector 11M logo](https://github.com/Martenelias/Small-projects/assets/124877606/b4005eff-cfa4-4bae-b81a-2d6f8f390906) 
 
-pizza app 
+# Pizza Delivery Project 
+Welcome to the Pizza Delight! This is a responsive, mobile-friendly web application that allows users to choose their favorite pizzas, add them to a cart, and make purchases.  
 
-## pizza kategooriad: 
+## Features 
+- ***Responsive Design:*** Optimized for both desktop and mobile devices. 
+- ***Add to Cart:*** Easily add your favorite pizzas to the shopping cart. 
+- ***Cart Management:*** View, modify, and remove items from the cart. 
+- ***Purchase:*** Proceed to purchase the items in your cart.
 
-BBQ Pizza 
+## Technologies Used 
+- ***HTML5:*** For structure and content. 
+- ***SASS:*** For styling and layout. 
+- ***JavaScript:*** For interactivity and functionality. 
+- ***Responsive Design:*** Media queries and flexible layouts.
 
-BBQ sauce 
-Grilled chicken 
-Red onions 
-Mozzarella cheese 
-Cilantro 
-Italian Pizza 
+## Installation 
+Make sure you have npm and Node.js installed. 
 
-Tomato sauce 
-Fresh mozzarella cheese 
-Fresh basil 
-Olive oil 
-Garlic 
-Margherita Pizza 
+- npm 
+`npm install npm@latest -g
+` 
 
-Tomato sauce 
-Fresh mozzarella cheese 
-Fresh basil 
-Olive oil 
-Salt 
-Pepperoni Pizza 
+- Clone reposiroty`
+git clone https://github.com/your-username/pizza-delivery.git
 
-Tomato sauce 
-Mozzarella cheese 
-Pepperoni slices 
-Oregano 
-Olive oil 
-Supreme Pizza 
+`
+- Directory 
+`cd pizza-delivery` 
 
-Tomato sauce 
-Mozzarella cheese 
-Pepperoni 
-Sausage 
-Green bell peppers 
-Red onions 
-Black olives 
-Mushrooms 
-Tomato Pizza 
+- npm packages
+`npm install
 
-Tomato sauce 
-Fresh tomatoes 
-Fresh mozzarella cheese 
-Basil 
-Olive oil 
-Veggie Pizza 
+` 
 
-Tomato sauce 
-Mozzarella cheese 
-Bell peppers 
-Red onions 
-Mushrooms 
-Black olives 
-Spinach 
-
-
-check eslint errors: 
-npm run lint 
-
-fix errors: npm run lint:fix
